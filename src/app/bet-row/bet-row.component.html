@@ -1,0 +1,13 @@
+
+
+<div  class="row" *ngFor ='let event of team'>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">{{event.team1}} vs {{event.team2}}<br/>{{event.startTime}}</h3>
+        <p class="card-text"><app-bet-odds [sites]='event.sites'></app-bet-odds></p>
+       
+      </div>
+    </div>
+  </div>
+</div>
