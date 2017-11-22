@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TwitterDisplayComponent } from './twitter-display/twitter-display.component';
 import { BbcDisplayComponent } from './bbc-display/bbc-display.component';
 import { BetOddsComponent } from './bet-odds/bet-odds.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,11 @@ import { BetOddsComponent } from './bet-odds/bet-odds.component';
     TwitterDisplayComponent,
     BbcDisplayComponent,
     BetOddsComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

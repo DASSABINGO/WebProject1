@@ -9,15 +9,16 @@ import 'rxjs/add/operator/map';
 })
 export class BbcDisplayComponent implements OnInit {
 
-  private apiUrl: "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3b40babbdeb84c3c97b6e142d67e1c20";
+  private apiUrl: "https://api.the-odds-api.com/v2/odds/?apiKey=5ab3e77933c9548bbf89f62de3847c31&sport=NBA&region=uk";
   data:any ={};
   constructor(private http:Http) { 
     console.log('Hello Hello');
     this.get1();
     this.getData();
+    
   }
   getData(){
-    return this.http.get(this.apiUrl).map((res: Response) => res.json())
+    return this.http.get(this.apiUrl).map((res: Response) => res.json());
   }
   get1(){
     this.getData().subscribe(data => {
