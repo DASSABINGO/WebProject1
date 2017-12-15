@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http, Headers } from '@angular/http';
 
 @Component({
   selector: 'app-twitter-display',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwitterDisplayComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private http: Http) {
+    
+   }
+  
   ngOnInit() {
   }
 
